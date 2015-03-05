@@ -9,9 +9,10 @@
 'use strict';
 
 function Escape() {}
-Escape.prototype = {
 
-	version : '0.0.1',
+Escape.version = '0.0.1';
+
+Escape.prototype = {
 
 	/**
 	 * escape special characters in the given string of html.
@@ -21,7 +22,7 @@ Escape.prototype = {
 	 * api private
 	 */
 
-	html: function(html) {
+	html: function (html) {
 		return String(html)
 			.replace(/&/g, '&amp;')
 			.replace(/"/g, '&quot;')
@@ -31,4 +32,4 @@ Escape.prototype = {
 	}
 
 
-}
+};
